@@ -120,7 +120,7 @@ function StockDetail() {
                 ))}
               </div>
               
-              <div className="w-full h-[200px] sm:h-[300px] bg-[#1E1E1E] rounded-lg p-4">
+              <div className="w-full h-[200px] sm:h-[300px] bg-[#1E1E1E] rounded-lg ">
                 <img 
                   src={chartImages[timeframe]}
                   alt="Stock Chart"
