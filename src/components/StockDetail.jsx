@@ -25,9 +25,9 @@ function StockDetail() {
   };
 
   const chartImages = {
-    '7d': 'https://www.tradingview.com/x/pNh4ihLK/',
-    '1m': 'https://vivstock.com/wp-content/uploads/2024/12/chart2.png',
-    '3m': 'https://vivstock.com/wp-content/uploads/2024/12/chart3.png'
+    '7d': 'https://www.tradingview.com/x/Xm7fKYYr/',
+    '1m': 'https://www.tradingview.com/x/h285ot5S/',
+    '3m': 'https://www.tradingview.com/x/5hHRnKH1/'
   };
 
   const handleTrade = (type) => {
