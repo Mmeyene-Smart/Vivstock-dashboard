@@ -124,7 +124,7 @@ function StockDetail() {
                 <img 
                   src={chartImages[timeframe]}
                   alt="Stock Chart"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full "
                 />
               </div>
             </div>
