@@ -25,7 +25,7 @@ function StockDetail() {
   };
 
   const chartImages = {
-    '7d': '../../public/charts.png',
+    '7d': 'https://github.com/Mmeyene-Smart/chart/blob/main/charts.png',
     '1m': 'https://vivstock.com/wp-content/uploads/2024/12/chart2.png',
     '3m': 'https://vivstock.com/wp-content/uploads/2024/12/chart3.png'
   };
