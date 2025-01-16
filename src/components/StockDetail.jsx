@@ -25,7 +25,7 @@ function StockDetail() {
   };
 
   const chartImages = {
-    '7d': 'https://vivstock.com/wp-content/uploads/2024/12/chart1.png',
+    '7d': './charts.png',
     '1m': 'https://vivstock.com/wp-content/uploads/2024/12/chart2.png',
     '3m': 'https://vivstock.com/wp-content/uploads/2024/12/chart3.png'
   };
