@@ -9,7 +9,7 @@ function TraderCard({ trader }) {
   };
 
   return (
-    <div className="bg-transparent w-[320px] h-[430px] relative   min-h-[100px] border border-[#626060] rounded-[20px] p-6 min-w-[250px] md:min-w-[calc(50%-1rem)]">
+    <div className="bg-transparent w-[220px] h-[330px] relative   min-h-[100px] border border-[#626060] rounded-[20px] p-6 min-w-[250px] md:min-w-[calc(50%-1rem)]">
       <div className="flex items-center gap-3 mb-4 relative top-[-15px] left-[-15px]">
         <div className="w-16 h-16 bg-purple-600 rounded-full"></div>
         <span className="font-semibold text-[12px]" >{trader.id}</span>
