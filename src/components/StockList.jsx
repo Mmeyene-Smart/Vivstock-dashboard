@@ -74,7 +74,7 @@ function StockList() {
                 </div>
               </div>
               <div className="text-right">
-                <p className="font-semibold">${stock.price}</p>
+                <p className="font-semibold text-[13px]">${stock.price}</p>
               </div>
             </div>
           ))}
