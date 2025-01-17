@@ -17,14 +17,14 @@ export const stockData = [
     name: "Apple Inc",
     symbol: "AAPL",
     price: "182.31",
-    logo: "https://www.flaticon.com/free-icon/apple-logo_747",
+    logo: "https://img.icons8.com/?size=100&id=30840&format=png",
     isUSD: true
   },
   {
     name: "Microsoft",
     symbol: "MSFT",
     price: "403.78",
-    logo: "	https://cdn-dynmedia-1.microsoft.com/is/image/micr…/UHFbanner-MSlogo?fmt=png-alpha&bfc=off&qlt=100,1",
+    logo: "	https://img.icons8.com/?size=48&id=22989&format=png",
     isUSD: true
   },
   {
