@@ -109,7 +109,7 @@ function StockDetail() {
                 <img 
                   src={chartImages[timeframe]}
                   alt="Stock Chart"
-                  className="w-full h-full "
+                  className="w-full h-full mb-[10px]"
                 />
               </div>
               <div className="flex gap-4 mb-4 overflow-x-auto scrollbar-hide">
