@@ -55,7 +55,7 @@ function StockList() {
           <IoMdSwap className="text-[#00B087]" size={24} />
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 text-[20px] border-b border-[#fefefe]">
           {filteredStocks.map((stock) => (
             <div
               key={stock.symbol}
