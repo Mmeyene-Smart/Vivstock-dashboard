@@ -62,7 +62,7 @@ function StockList() {
               className="flex items-center justify-between cursor-pointer hover:bg-[#1E1E1E] p-4  transition-colors border-b border-gray-400"
               onClick={() => handleStockClick(stock.symbol)}
             >
-              <div className="flex items-center gap-3 w-full h-[60px] text-[15px]">
+              <div className="flex items-center gap-3 w-full h-[55px] text-[15px]">
                 <img
                   src={stock.logo}
                   alt={stock.name}
