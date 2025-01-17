@@ -59,7 +59,7 @@ function StockList() {
           {filteredStocks.map((stock) => (
             <div
               key={stock.symbol}
-              className="flex items-center justify-between cursor-pointer hover:bg-[#1E1E1E] p-4 rounded-lg transition-colors border-b border-gray-400"
+              className="flex items-center justify-between cursor-pointer hover:bg-[#1E1E1E] p-4  transition-colors border-b border-gray-400"
               onClick={() => handleStockClick(stock.symbol)}
             >
               <div className="flex items-center gap-3 w-full h-[60px] text-[15px]">
