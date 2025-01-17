@@ -10,7 +10,7 @@ export const stockData = [
     name: "Airtel Africa",
     symbol: "AIRTELAFRI",
     price: "2,299.91",
-    logo:'https://www.airtel.com/common/logo-bg.jpg',
+    logo:'	https://www.airtel.com.ng/assets/images/ug/airtel-icon-ug.png',
     isUSD: false
   },
   {
