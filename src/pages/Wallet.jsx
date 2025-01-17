@@ -1,73 +1,36 @@
-import { AreaChart, Area, ResponsiveContainer, CartesianGrid, Tooltip } from 'recharts';
 import { useState } from 'react';
+import WalletHeader from '../components/wallet/WalletHeader';
+import AssetBalance from '../components/wallet/AssetBalance';
+import TimeframeSelector from '../components/wallet/TimeframeSelector';
+import AssetChart from '../components/wallet/AssetChart';
+import LastUpdate from '../components/wallet/LastUpdate';
 
-const generateData = (days) => {
-  return Array.from({ length: days }, (_, i) => ({
-    value: Math.random() * 20 + 10,
-    date: i
-  }));
-};
+function Wallet() {
+  const [selectedTimeframe, setSelectedTimeframe] = useState('7d');
 
-const timeframeData = {
-  '7d': generateData(7),
-  '30d': generateData(30),
-  '90d': generateData(90),
-  '180d': generateData(180)
-};
-
-const CustomTooltip = ({ active, payload }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className="bg-[#1E1E1E] p-2 rounded-lg border border-gray-700">
-        <p className="text-white font-medium">
-          ${payload[0].value.toFixed(2)}
-        </p>
-      </div>
-    );
-  }
-  return null;
-};
-
-function AssetChart({ timeframe }) {
   return (
-    <div className="bg-transparent w-130% rounded-lg p-6 mb-8">
-      <div className="w-full h-[300px] relative">
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-[#FFB800] opacity-10 blur-2xl transform translate-y-4"></div>
-        </div>
-        <ResponsiveContainer width="110%" height="100%" className="res-chart relative left-[-5%]">
-          <AreaChart 
-            data={timeframeData[timeframe]} 
-            margin={{ top: 0, right: 0, bottom: 9, left: 0 }}
-          >
-            <defs>
-              <linearGradient id="assetGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#FFB800" stopOpacity={0.4}/>
-                <stop offset="100%" stopColor="#FFB800" stopOpacity={0.1}/>
-              </linearGradient>
-            </defs>
-            <CartesianGrid 
-              strokeDasharray="3 3" 
-              vertical={false} 
-              stroke="#FFB800"
-              opacity={0.1}
-            />
-            <Tooltip content={<CustomTooltip />} />
-            <Area
-              type="natural"
-              dataKey="value"
-              stroke="#FFB800"
-              strokeWidth={2}
-              fill="url(#assetGradient)"
-              animationDuration={2000}
-              animationEasing="ease-in-out"
-              baseLine={0}
-            />
-          </AreaChart>
-        </ResponsiveContainer>
+    <div className="px-4 py-6">
+      <WalletHeader />
+      <AssetBalance amount="1.10" btcAmount="0.0000118" />
+      <AssetChart timeframe={selectedTimeframe} />
+      <TimeframeSelector
+        selected={selectedTimeframe}
+        onSelect={setSelectedTimeframe}
+      />
+      <LastUpdate timestamp="2024-12-24T04:10:00Z" />
+      <div className="flex justify-center gap-4 mt-8 relative my-[60px] ">
+        <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
+          Deposit
+        </button>
+        <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
+          Withdraw
+        </button>
+        <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
+          Transfer
+        </button>
       </div>
     </div>
   );
 }
 
-export default AssetChart;
+export default Wallet;
