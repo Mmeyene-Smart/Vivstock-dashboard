@@ -31,7 +31,7 @@ function StockList() {
       </div>
 
       <div className="relative mb-8">
-        <div className="flex items-center bg-app-gray rounded-lg px-4 py-3">
+        <div className="flex items-center bg-app-gray px-4 py-3">
           <input
             type="text"
             placeholder="Search Local stocks"
