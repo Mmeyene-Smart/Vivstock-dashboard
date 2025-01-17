@@ -1,6 +1,4 @@
-Here's the updated code to make the "All", "USD only", and "Naira only" buttons responsive and ensure their font size fits every screen size:
 
-```javascript
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoArrowBack } from 'react-icons/io5';
@@ -112,6 +110,3 @@ function Market() {
 }
 
 export default Market;
-```
-
-This update ensures that the font size of the buttons adjusts based on screen size while maintaining their responsiveness and oval shape. The classes `text-base`, `sm:text-lg`, and `md:text-xl` ensure that the font size increases on larger screens.
