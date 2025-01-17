@@ -1,4 +1,4 @@
-import { AreaChart, Area, ResponsiveContainer, CartesianGrid, Tooltip } from 'recharts';
+import { AreaChart, Area, ResponsiveContainer, CartesianGrid, Tooltip, Dot } from 'recharts';
 import { useState } from 'react';
 
 const generateData = (days) => {
@@ -59,6 +59,7 @@ function AssetChart({ timeframe }) {
               stroke="#FFB800"
               strokeWidth={2}
               fill="url(#assetGradient)"
+              dot={<Dot r={3} stroke="#FFB800" strokeWidth={2} />}
               animationDuration={2000}
               animationEasing="ease-in-out"
               baseLine={0}
