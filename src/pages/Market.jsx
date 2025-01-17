@@ -1,3 +1,6 @@
+Here's the updated code to make the "All", "USD only", and "Naira only" buttons responsive and ensure their font size fits every screen size:
+
+```javascript
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoArrowBack } from 'react-icons/io5';
@@ -35,31 +38,31 @@ function Market() {
       <div className="flex gap-2 mb-8">
         <button
           onClick={() => setSelectedCurrency('all')}
-          className={`px-6 py-2 rounded-full ${
+          className={`px-4 py-2 rounded-full ${
             selectedCurrency === 'all' 
               ? 'bg-black text-white' 
               : 'bg-[#E8F3F1] text-black'
-          }`}
+          } text-base sm:text-lg md:text-xl`}
         >
           All
         </button>
         <button
           onClick={() => setSelectedCurrency('usd')}
-          className={`px-6 py-2 rounded-full ${
+          className={`px-4 py-2 rounded-full ${
             selectedCurrency === 'usd'
               ? 'bg-black text-white'
               : 'bg-[#E8F3F1] text-black'
-          }`}
+          } text-base sm:text-lg md:text-xl`}
         >
           USD only
         </button>
         <button
           onClick={() => setSelectedCurrency('ngn')}
-          className={`px-6 py-2 rounded-full ${
+          className={`px-4 py-2 rounded-full ${
             selectedCurrency === 'ngn'
               ? 'bg-black text-white'
               : 'bg-[#E8F3F1] text-black'
-          }`}
+          } text-base sm:text-lg md:text-xl`}
         >
           Naira only
         </button>
@@ -109,3 +112,6 @@ function Market() {
 }
 
 export default Market;
+```
+
+This update ensures that the font size of the buttons adjusts based on screen size while maintaining their responsiveness and oval shape. The classes `text-base`, `sm:text-lg`, and `md:text-xl` ensure that the font size increases on larger screens.
