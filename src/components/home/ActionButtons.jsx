@@ -39,7 +39,7 @@ function ActionButtons() {
     timeoutRef.current = setTimeout(() => {
       setHasTimedOut(true);
       setShowReferralButton(false);
-    }, 10000);
+    });
 
     // Set up intersection observer
     const observer = new IntersectionObserver(
