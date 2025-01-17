@@ -104,6 +104,14 @@ function StockDetail() {
 
             {/* Chart Section */}
             <div className="mb-8">
+              
+              <div className="w-full h-[200px] sm:h-[300px] bg-[#1E1E1E] rounded-lg ">
+                <img 
+                  src={chartImages[timeframe]}
+                  alt="Stock Chart"
+                  className="w-full h-full "
+                />
+              </div>
               <div className="flex gap-4 mb-4 overflow-x-auto scrollbar-hide">
                 {Object.keys(chartImages).map((tf) => (
                   <button
@@ -118,14 +126,6 @@ function StockDetail() {
                     {tf.toUpperCase()}
                   </button>
                 ))}
-              </div>
-              
-              <div className="w-full h-[200px] sm:h-[300px] bg-[#1E1E1E] rounded-lg ">
-                <img 
-                  src={chartImages[timeframe]}
-                  alt="Stock Chart"
-                  className="w-full h-full "
-                />
               </div>
             </div>
 
