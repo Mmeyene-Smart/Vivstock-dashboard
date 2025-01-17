@@ -38,7 +38,7 @@ export const stockData = [
     name: "Tesla, Inc",
     symbol: "TSLA",
     price: "193.57",
-    logo: "https://images.app.goo.gl/eg3rMQmrAJY8aDby8",
+    logo: "https://img.icons8.com/?size=48&id=34784&format=png",
     isUSD: true
   }
 ];
