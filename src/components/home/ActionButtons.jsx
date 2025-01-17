@@ -4,8 +4,6 @@ import { FaWallet } from 'react-icons/fa';
 import { RiBankCardFill } from 'react-icons/ri';
 import { FaExchangeAlt } from 'react-icons/fa';
 
-
-
 function ReferralModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
@@ -91,12 +89,12 @@ function ActionButtons() {
             Transfer
           </button>
         </div>
-        <div className=" border-b relative left-[-10px] border-gray-700 top-[-20px] md:full w-[120%]"></div>
+        <div className="border-b relative left-[-10px] border-gray-700 top-[-20px] md:w-full w-[120%]"></div>
       </div>
       {showReferralButton && (
         <button 
           onClick={() => setIsModalOpen(true)}
-          className="fixed left-1/2 transform -translate-x-1/2 bottom-20 z-40 bg-[#7F3DFF] text-white px-6 py-3 rounded-full font-medium shadow-lg hover:bg-[#6a34d9] transition-colors"
+          className="fixed left-1/2 transform -translate-x-1/2 bottom-20 z-40 bg-[#7F3DFF] text-white px-6 py-3 rounded-full font-medium shadow-lg hover:bg-[#6a34d9] transition-colors min-w-[200px] max-w-[300px] w-[80%] sm:w-auto"
         >
           Share & Earn
         </button>
