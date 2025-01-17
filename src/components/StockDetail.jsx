@@ -105,11 +105,11 @@ function StockDetail() {
             {/* Chart Section */}
             <div className="mb-8">
               
-              <div className="w-full h-[200px] sm:h-[300px] bg-[#1E1E1E] rounded-lg ">
+              <div className="w-full h-[200px] sm:h-[300px] bg-[#1E1E1E] rounded-lg mb-[10px]">
                 <img 
                   src={chartImages[timeframe]}
                   alt="Stock Chart"
-                  className="w-full h-full mb-[10px]"
+                  className="w-full h-full "
                 />
               </div>
               <div className="flex gap-4 mb-4 overflow-x-auto scrollbar-hide">
