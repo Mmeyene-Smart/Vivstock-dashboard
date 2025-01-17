@@ -37,15 +37,13 @@ function StockDetail() {
   return (
     <div className="min-h-screen max-w-5xl mx-auto font-['DM Sans'] px-4 sm:px-6 lg:px-8">
       <div className="py-4 sm:py-6">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-2">
           <button 
             onClick={() => navigate(-1)}
             className="p-2 hover:bg-[#1E1E1E] rounded-full transition-colors"
           >
             <IoArrowBack size={24} />
           </button>
-          <h1 className="text-lg sm:text-xl font-bold">{stock.symbol}</h1>
           <IoMdHeart 
             size={24} 
             className={`${isLiked ? 'text-purple-500' : 'text-white'} cursor-pointer transition-colors`}
@@ -53,16 +51,22 @@ function StockDetail() {
           />
         </div>
 
+        {/* Stock Name and Symbol */}
+        <div className="text-center mb-4">
+          <h1 className="text-2xl font-bold mb-1">{stock.symbol}</h1>
+          <p className="text-gray-400 text-sm">{stock.name}</p>
+        </div>
+
         {/* Tabs */}
-        <div className="flex justify-center gap-6 mb-6">
+        <div className="flex justify-center gap-8 mb-8">
           <button 
-            className={`pb-2 ${activeTab === 'about' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
+            className={`pb-2 text-lg ${activeTab === 'about' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
             onClick={() => setActiveTab('about')}
           >
             About
           </button>
           <button 
-            className={`pb-2 ${activeTab === 'financials' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
+            className={`pb-2 text-lg ${activeTab === 'financials' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
             onClick={() => setActiveTab('financials')}
           >
             Financials
@@ -79,10 +83,10 @@ function StockDetail() {
                   alt={stock.name} 
                   className="w-16 h-16 rounded-lg"
                 />
-                <div className="text-center sm:text-left">
+{/*                 <div className="text-center sm:text-left">
                   <h2 className="text-xl sm:text-2xl font-bold">{stock.symbol}</h2>
                   <p className="text-gray-400">{stock.name}</p>
-                </div>
+                </div> */}
               </div>
               
               <div className="text-center mt-6">
