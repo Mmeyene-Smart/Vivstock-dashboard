@@ -55,14 +55,14 @@ function StockList() {
           <IoMdSwap className="text-[#00B087]" size={24} />
         </div>
 
-        <div className="space-y-4 text-[20px] border-b border-[#fefefe]">
+        <div className="space-y-4">
           {filteredStocks.map((stock) => (
             <div
               key={stock.symbol}
               className="flex items-center justify-between cursor-pointer hover:bg-[#1E1E1E] p-4 rounded-lg transition-colors"
               onClick={() => handleStockClick(stock.symbol)}
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3  text-[20px] border-b border-[#fefefe]">
                 <img
                   src={stock.logo}
                   alt={stock.name}
