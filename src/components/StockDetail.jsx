@@ -76,22 +76,22 @@ function StockDetail() {
         {activeTab === 'about' ? (
           <div className="mb-8">
             {/* Stock Info */}
-            <div className="flex items-center gap-4 justify-center mb-6">
+            <div className="flex items-center gap-4 justify-start ml-2 mb-6">
               <img 
                 src={stock.logo || "https://example.com/placeholder.png"}
                 alt={stock.name}
                 className="w-16 h-16 rounded-lg bg-white"
               />
               <div className="text-left">
-                <h2 className="text-3xl font-bold mb-1">₦{stock.price}</h2>
+                <h2 className="text-2xl font-bold mb-1">₦{stock.price}</h2>
                 <div className="flex items-center gap-2">
-                  <span className="text-red-500 text-sm">₦0.10</span>
-                  <span className="text-red-500 text-sm">0.39%</span>
-                  <span className="text-gray-500 text-sm">TODAY</span>
+                  <span className="text-red-500 text-xs">₦0.10</span>
+                  <span className="text-red-500 text-xs">0.39%</span>
+                  <span className="text-gray-500 text-xs">TODAY</span>
                 </div>
                 <div className="flex items-center gap-2 mt-1">
                   <span className="w-2 h-2 rounded-full bg-red-500"></span>
-                  <span className="text-red-500 text-sm">Market Closed</span>
+                  <span className="text-red-500 text-xs">Market Closed</span>
                 </div>
               </div>
             </div>
