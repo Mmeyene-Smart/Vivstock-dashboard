@@ -9,14 +9,14 @@ function TraderCard({ trader }) {
   };
 
   return (
-    <div className="bg-transparent w-[220px] h-[360px] relative   min-h-[100px] border border-[#626060] rounded-[20px] p-6 min-w-[250px] md:min-w-[calc(50%-1rem)]">
+    <div className="bg-transparent w-[280px] h-[340px] relative   min-h-[100px] border border-[#626060] rounded-[20px] p-6 min-w-[250px] md:min-w-[calc(50%-1rem)]">
       <div className="flex items-center gap-3 mb-4 relative top-[-15px] left-[-15px]">
         <div className="w-16 h-16 bg-purple-600 rounded-full"></div>
         <span className="font-semibold text-[12px]" >{trader.id}</span>
       </div>
       
       <div className="flex w-[100%] items-center gap-2 mb-4 relative top-[-30px] left-[-10px]">
-        <span className="text-sm text-gray-400 text-[11px] relative left-[-10px] ml-[10px] font-[Arial] font-semibold">7d copiers profit</span>
+        <span className="text-sm text-gray-400 text-[13px] relative left-[-5px] font-semibold ">7d copiers profit</span>
         <span className="text-white relative left-[35px]">{trader.profit}</span>
       </div>
       

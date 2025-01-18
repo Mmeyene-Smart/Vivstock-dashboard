@@ -185,7 +185,7 @@ function ActionButtons() {
           <button className="bg-[#1E1E1E] left-[-50px] w-[120px] text-white py-2 px-4 relative top-[-10px] rounded-full font-[syne] font-light flex items-center justify-center gap-2 text-[15px]">
             <FaExchangeAlt 
               size={15} color="#7d26cd"/>
-            Exchange
+            Transfer
           </button>
         </div>
         {showReferralButton && (
