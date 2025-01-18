@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoArrowBack } from 'react-icons/io5';
@@ -82,27 +81,27 @@ function Market() {
 
       <h2 className="text-xl font-bold mb-6">All Assets Offerings</h2>
       
-      <div className="grid grid-cols-2 gap-1">
+      <div className="grid grid-cols-2 gap-1 w-full">
         <div 
-          className="bg-black p-6 rounded-lg cursor-pointer"
+          className="bg-black p-6 rounded-lg cursor-pointer w-full"
           onClick={() => handleAssetClick('usd')}
         >
-          <div className="w-20 h-16 mb-4">
+          <div className="w-24 h-12 mb-4">
             <div className="w-full h-full bg-green-100 rounded-lg"></div>
           </div>
-          <h3 className="text-lg font-bold text-white">Foriegn Stocks</h3>
-          <p className="text-gray-600">Buy Foriegn Companies</p>
+          <h3 className="text-[17px] font-bold text-white w-full">Foriegn Stocks</h3>
+          <p className="text-white text-[12px] sm:text-[12px] w-full ">Buy Foriegn Companies</p>
         </div>
 
         <div 
-          className="bg-black p-6 rounded-lg cursor-pointer"
+          className="bg-black p-6 rounded-lg cursor-pointer w-full"
           onClick={() => handleAssetClick('ngn')}
         >
-          <div className="w-16 h-16 mb-4">
+          <div className="w-24 h-16 mb-4">
             <div className="w-full h-full bg-green-100 rounded-lg"></div>
           </div>
-          <h3 className="text-lg font-bold text-white">Local Stocks</h3>
-          <p className="text-gray-600">Buy local companies</p>
+          <h3 className="text-lg font-bold text-white w-full">Local Stocks</h3>
+          <p className="text-white text-[12px] sm:text-[12px] w-full">Buy local companies</p>
         </div>
       </div>
     </div>
