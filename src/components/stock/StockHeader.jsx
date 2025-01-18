@@ -11,12 +11,14 @@ function StockHeader({ symbol, name, onBack }) {
         >
           <IoArrowBack size={24} />
         </button>
+        <div className="flex flex-col items-center">
+          <h1 className="text-xl font-bold">{symbol}</h1>
+          <p className="text-gray-400 text-sm">{name}</p>
+        </div>
         <IoMdHeart size={24} className="text-white" />
       </div>
 
       <div className="text-center relative top-[-65px] mb-8">
-        <h1 className="text-2xl font-bold mb-1">{symbol}</h1>
-        <p className="text-gray-400">{name}</p>
       </div>
     </>
   );

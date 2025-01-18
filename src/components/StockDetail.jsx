@@ -44,6 +44,10 @@ function StockDetail() {
           >
             <IoArrowBack size={24} />
           </button>
+          <div className="flex flex-col items-center">
+            <h1 className="text-lg font-bold mb-1">{stock.symbol}</h1>
+            <p className="text-gray-400 text-sm">{stock.name}</p>
+          </div>
           <IoMdHeart 
             size={24} 
             className={`${isLiked ? 'text-purple-500' : 'text-white'} cursor-pointer transition-colors`}
@@ -53,8 +57,7 @@ function StockDetail() {
 
         {/* Stock Name and Symbol */}
         <div className="text-center mb-4">
-          <h1 className="text-2xl font-bold mb-1">{stock.symbol}</h1>
-          <p className="text-gray-400 text-sm">{stock.name}</p>
+          {/* Removed the stock name and symbol from here */}
         </div>
 
         {/* Tabs */}
