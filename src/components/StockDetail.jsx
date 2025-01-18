@@ -159,7 +159,7 @@ function StockDetail() {
           <div className="mb-8">
             {/* Financials Tab */}
             <div className="grid grid-cols-1 gap-4 mb-8">
-              <div className="bg-[#1E1E1E] p-4 rounded-lg">
+              <div className="bg-transparent p-4 rounded-lg">
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {stock.name} operates as a company in the Nigerian market. The company provides various services
                   and products to its customers, maintaining a strong presence in the local business environment.
@@ -168,7 +168,7 @@ function StockDetail() {
             </div>
 
             {/* Market Stats */}
-            <div className="bg-[#1E1E1E] p-4 rounded-lg">
+            <div className="bg-transparent p-4 rounded-lg">
               <h3 className="text-lg font-semibold mb-4">Market Stats</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-gray-700">
