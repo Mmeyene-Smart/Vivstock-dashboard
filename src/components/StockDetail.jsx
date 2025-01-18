@@ -61,15 +61,15 @@ function StockDetail() {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-8 mb-8">
+        <div className="flex justify-between mb-8">
           <button 
-            className={`pb-2 text-lg ${activeTab === 'about' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
+            className={`flex-1 pb-2 text-lg ${activeTab === 'about' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
             onClick={() => setActiveTab('about')}
           >
             About
           </button>
           <button 
-            className={`pb-2 text-lg ${activeTab === 'financials' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
+            className={`flex-1 pb-2 text-lg ${activeTab === 'financials' ? 'text-white font-semibold border-b-2 border-[#00B087]' : 'text-gray-400'}`}
             onClick={() => setActiveTab('financials')}
           >
             Financials
