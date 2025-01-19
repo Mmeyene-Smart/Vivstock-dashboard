@@ -85,7 +85,7 @@ function TradingViewWidget() {
           ],
           "chartOnly": false,
           "width": "100%",
-          "height": "100%",
+          "height": "180%",
           "locale": "en",
           "colorTheme": "dark",
           "autosize": true,
