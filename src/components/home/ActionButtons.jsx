@@ -8,18 +8,18 @@ function ReferralModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
       <div className="bg-[#1E1E1E] rounded-lg p-6 w-[90%] max-w-md relative">
+        <h2 className="text-xl font-bold mb-4">Share Referral Link</h2>
+        <div className="bg-[#111111] p-4 rounded-lg mb-4">
+          <p className="text-gray-400 break-all text-[15px]">https://Vivstocks.com/ref/hopeubong2430</p>
+        </div>
         <button 
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-gray-400 hover:text-white"
         >
           <IoClose size={24} />
         </button>
-        <h2 className="text-xl font-bold mb-4">Share Referral Link</h2>
-        <div className="bg-[#111111] p-4 rounded-lg mb-4">
-          <p className="text-gray-400 break-all">https://Vivstocks.com/ref/hopeubong2430</p>
-        </div>
       </div>
     </div>
   );
@@ -86,9 +86,11 @@ function ActionButtons() {
 
             // className="w-[110%] bg-purple-600 h-[45px] text-black top-[-30px] relative left-[-15px] text-[16px] font-[Poppins] font-semibold py-3 rounded-[15px] hover:bg-purple-700 transition-colors"
           >
-            <img src={'./vivstock-logo.jpg'} width={30} height={30} alt="" />
-            ..
-            ..
+            {/* <img src={'./vivstock-logo.jpg'} width={30} height={30} alt="" /> */}
+            <span>
+              <div>..</div>
+              <div>..</div>
+            </span>
           </button>
         )}
         <ReferralModal isOpen={isModalOpen} onClose={closeModal} />

@@ -4,6 +4,7 @@ import ActionButtons from '../components/home/ActionButtons';
 import ActivityChart from '../components/home/ActivityChart';
 import PopularStocks from '../components/home/PopularStocks';
 import CopyTrade from '../components/home/CopyTrade';
+import TradingViewWidget from '../components/home/ActivityChart';
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <TradingCard />
       <ActionButtons />
       <ActivityChart />
+      <TradingViewWidget/>
       <PopularStocks />
       <CopyTrade />
     </div>
