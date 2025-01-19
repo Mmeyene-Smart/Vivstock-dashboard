@@ -23,12 +23,12 @@ function Market() {
   return (
     <div className="px-4 py-6">
       <div className="flex items-center gap-4 mb-6">
-        <button 
+        {/* <button 
           onClick={() => navigate(-1)}
           className="p-2 hover:bg-[#1E1E1E] rounded-full transition-colors"
         >
           <IoArrowBack size={24} />
-        </button>
+        </button> */}
         <h1 className="text-2xl font-bold">Assets</h1>
       </div>
 

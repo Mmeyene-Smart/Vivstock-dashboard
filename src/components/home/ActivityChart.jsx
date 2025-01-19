@@ -25,7 +25,7 @@ function ActivityChart() {
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-[#7F3DFF] opacity-10 blur-2xl transform translate-y-4"></div>
         </div>
-        <ResponsiveContainer  width="110%" height="100%" className="res-chart relative left-[-5%] ">
+        <ResponsiveContainer  width="110%" height="90%" className="res-chart relative left-[-5%] ">
           <AreaChart 
             data={data} 
             margin={{ top: 0, right: 0, bottom: 9, left: 0 }}
@@ -45,7 +45,7 @@ function ActivityChart() {
             <Area
               type="natural"
               dataKey="value"
-              stroke="#7F3DFF"
+              stroke="#fff"
               strokeWidth={2}
               fill="url(#colorGradient)"
               animationDuration={2000}

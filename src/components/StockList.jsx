@@ -26,17 +26,17 @@ function StockList() {
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-4">
           <IoArrowBack size={24} onClick={() => navigate(-1)} className="cursor-pointer" />
-          <h1 className="text-xl font-semibold">Search Stocks</h1>
+          <h1 className="text-xl font-semibold text-center">Search Stocks</h1>
         </div>
       </div>
 
       <div className="relative mb-8">
-        <div className="flex items-center bg-app-gray px-4 py-3">
+        <div className="flex items-center bg-app-gray px-4 py-3 rounded-[20px] border border-gray-400">
           <IoSearch size={24} className="text-gray-400 mr-2" />
           <input
             type="text"
             placeholder="Search Local stocks"
-            className="flex-1 bg-transparent outline-none"
+            className="flex-1 bg-transparent outline-none "
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -53,7 +53,7 @@ function StockList() {
       <div className="mb-6">
         <div className="flex w-[200px] h-[45px] items-center gap-2 mb-4 border-b border-t border-gray-800 pb-2">
           <h2 className="text-xl font-semibold">Featured Stocks</h2>
-          <IoMdSwap className="text-[#00B087]" size={24} />
+          <IoMdSwap className="text-[#7d26cd]" size={24} />
         </div>
 
         <div className="space-y-1">
