@@ -6,6 +6,8 @@ import StockList from './components/StockList';
 import StockDetail from './components/StockDetail';
 import Wallet from './pages/Wallet';
 import TraderProfile from './pages/TraderProfile';
+import History from './pages/History';
+import Trade from './pages/Trade';
 
 function App() {
   const location = useLocation();
@@ -22,6 +24,8 @@ function App() {
           <Route path="/trade/:symbol" element={<StockDetail />} />
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/trader/:traderId" element={<TraderProfile />} />
+          <Route path='/history' element={<History />} />
+          <Route path='Trade' element={<Trade />} />
         </Routes>
       </div>
     </div>

@@ -62,7 +62,7 @@ function ActionButtons() {
   return (
     <>
       <div>
-        <div className="flex justify-start gap-7 mb-8 mt-[-27px] pl-6 pr-4">
+        <div className="flex justify-start gap-7 mb-2 mt-[-27px] pl-6 pr-4">
           <button className="bg-[#1E1E1E] w-[110px] top-[-10px] relative text-2l text-white py-2 px-[10px] rounded-full font-[syne] font-light flex items-center left-[-30px] justify-center gap-2 text-[15px]">
             {/* <FaWallet
               size={15} color="#7d26cd"/> */}
