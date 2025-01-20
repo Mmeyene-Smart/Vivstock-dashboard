@@ -1,11 +1,11 @@
 import WelcomeHeader from '../components/home/WelcomeHeader';
 import TradingCard from '../components/home/TradingCard';
 import ActionButtons from '../components/home/ActionButtons';
-import ActivityChart from '../components/home/ActivityChart';
 import PopularStocks from '../components/home/PopularStocks';
 import CopyTrade from '../components/home/CopyTrade';
 import TradeChart from './tradingChart';
-import TradingViewWidget from '../components/home/TradingViewWidget';
+import ActivityChart from '../components/home/ActivityChart';
+// import TradingViewWidget from '../components/home/TradingViewWidget';
 
 
 
@@ -18,8 +18,8 @@ function Home() {
       <WelcomeHeader />
       <TradingCard />
       <ActionButtons />
-      {/* <ActivityChart/> */}
-      <TradingViewWidget />
+      <ActivityChart />
+      {/* <TradingViewWidget /> */}
       <PopularStocks />
       <CopyTrade />
     </div>
