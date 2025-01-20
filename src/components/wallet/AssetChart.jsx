@@ -8,12 +8,7 @@ const generateData = (days) => {
   }));
 };
 
-const timeframeData = {
-  '7d': generateData(7),
-  '30d': generateData(30),
-  '90d': generateData(90),
-  '180d': generateData(180)
-};
+const data = generateData(7); // Generate data for 7 days
 
 const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
@@ -28,7 +23,7 @@ const CustomTooltip = ({ active, payload }) => {
   return null;
 };
 
-function AssetChart({ timeframe }) {
+function AssetChart() {
   return (
     <div className="bg-transparent w-130% rounded-lg p-6 mb-8">
       <div className="w-full h-[300px] relative">
@@ -37,7 +32,7 @@ function AssetChart({ timeframe }) {
         </div>
         <ResponsiveContainer width="110%" height="100%" className="res-chart relative left-[-5%]">
           <AreaChart 
-            data={timeframeData[timeframe]} 
+            data={data} 
             margin={{ top: 0, right: 0, bottom: 9, left: 0 }}
           >
             <defs>

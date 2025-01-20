@@ -61,7 +61,7 @@ function Market() {
               : 'bg-[#E8F3F1] text-black'
           } text-base sm:text-lg md:text-xl`}
         >
-          Naira only
+          Local only
         </button>
       </div>
 
@@ -82,27 +82,31 @@ function Market() {
       <h2 className="text-xl font-bold mb-6">All Assets Offerings</h2>
       
       <div className="grid grid-cols-2 gap-1 w-full">
-        <div 
-          className="bg-black p-6 rounded-lg cursor-pointer w-full"
-          onClick={() => handleAssetClick('usd')}
-        >
-          <div className="w-24 h-12 mb-4">
-            <div className="w-full h-full bg-green-100 rounded-lg"></div>
+        {(selectedCurrency === 'all' || selectedCurrency === 'usd') && (
+          <div 
+            className="bg-black p-6 rounded-lg cursor-pointer w-full"
+            onClick={() => handleAssetClick('usd')}
+          >
+            <div className="w-24 h-12 mb-4">
+              <div className="w-full h-full bg-green-100 rounded-lg"></div>
+            </div>
+            <h3 className="text-[17px] font-bold text-white w-full">Foreign Stocks</h3>
+            <p className="text-white text-[12px] sm:text-[12px] w-full">Buy Foreign Companies</p>
           </div>
-          <h3 className="text-[17px] font-bold text-white w-full">Foriegn Stocks</h3>
-          <p className="text-white text-[12px] sm:text-[12px] w-full ">Buy Foriegn Companies</p>
-        </div>
+        )}
 
-        <div 
-          className="bg-black p-6 rounded-lg cursor-pointer w-full"
-          onClick={() => handleAssetClick('ngn')}
-        >
-          <div className="w-24 h-16 mb-4">
-            <div className="w-full h-full bg-green-100 rounded-lg"></div>
+        {(selectedCurrency === 'all' || selectedCurrency === 'ngn') && (
+          <div 
+            className="bg-black p-6 rounded-lg cursor-pointer w-full"
+            onClick={() => handleAssetClick('ngn')}
+          >
+            <div className="w-24 h-16 mb-4">
+              <div className="w-full h-full bg-green-100 rounded-lg"></div>
+            </div>
+            <h3 className="text-lg font-bold text-white w-full">Local Stocks</h3>
+            <p className="text-white text-[12px] sm:text-[12px] w-full">Buy local companies</p>
           </div>
-          <h3 className="text-lg font-bold text-white w-full">Local Stocks</h3>
-          <p className="text-white text-[12px] sm:text-[12px] w-full">Buy local companies</p>
-        </div>
+        )}
       </div>
     </div>
   );
