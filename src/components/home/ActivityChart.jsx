@@ -66,47 +66,50 @@ import { useEffect } from 'react';
 
 function ActivityChart() {
   useEffect(() => {
+    const container = document.getElementById('tradingview-widget-container');
+    if (!container) return;
+
     // Create and load TradingView widget script
     const script = document.createElement('script');
-    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+    script.src = 'https://s3.tradingview.com/tv.js';
     script.type = 'text/javascript';
     script.async = true;
-    script.innerHTML = `
-      {
-        "autosize": true,
-        "symbol": "NASDAQ:AAPL",
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "dark",
-        "style": "1",
-        "locale": "en",
-        "enable_publishing": false,
-        "backgroundColor": "rgba(0, 0, 0, 1)",
-        "gridColor": "rgba(66, 66, 66, 0.06)",
-        "hide_top_toolbar": true,
-        "hide_legend": true,
-        "save_image": false,
-        "calendar": false,
-        "hide_volume": true,
-        "support_host": "https://www.tradingview.com"
-      }`;
 
-    // Clean up function to remove the script when component unmounts
-    return () => {
-      const widgetContainer = document.getElementById('tradingview-widget-container');
-      if (widgetContainer) {
-        while (widgetContainer.firstChild) {
-          widgetContainer.removeChild(widgetContainer.firstChild);
-        }
+    script.onload = () => {
+      if (window.TradingView) {
+        new window.TradingView.widget({
+          container_id: 'tradingview-widget',
+          width: '100%',
+          height: '100%',
+          symbol: 'NASDAQ:AAPL',
+          interval: 'D',
+          timezone: 'Etc/UTC',
+          theme: 'dark',
+          style: '3',
+          locale: 'en',
+          enable_publishing: false,
+          backgroundColor: 'rgba(0, 0, 0, 1)',
+          gridColor: 'rgba(66, 66, 66, 0.06)',
+          hide_top_toolbar: false,
+          hide_legend: false,
+          save_image: false,
+          hide_volume: true,
+        });
       }
+    };
+
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
     };
   }, []);
 
   return (
     <div className="bg-transparent rounded-lg p-6 mb-8">
       <div className="w-full h-[300px] relative">
-        <div className="tradingview-widget-container" id="tradingview-widget-container">
-          <div className="tradingview-widget-container__widget" style={{ height: '100%', width: '100%' }}></div>
+        <div id="tradingview-widget-container" style={{ height: '100%', width: '100%' }}>
+          <div id="tradingview-widget" style={{ height: '100%', width: '100%' }}></div>
         </div>
       </div>
     </div>
