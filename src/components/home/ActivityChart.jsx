@@ -91,7 +91,7 @@ function ActivityChart() {
           backgroundColor: 'rgba(0, 0, 0, 1)',
           gridColor: 'rgba(66, 66, 66, 0.06)',
           hide_top_toolbar: false,
-          hide_legend: false,
+          hide_legend: true,
           save_image: false,
           hide_volume: true,
         });
@@ -107,7 +107,7 @@ function ActivityChart() {
 
   return (
     <div className="bg-transparent rounded-lg p-6 mb-8">
-      <div className="w-full h-[300px] relative">
+      <div className="w-screen h-[300px] relative left-[-30px] top-[30px]">
         <div id="tradingview-widget-container" style={{ height: '100%', width: '100%' }}>
           <div id="tradingview-widget" style={{ height: '100%', width: '100%' }}></div>
         </div>
