@@ -9,7 +9,7 @@ function TraderCard({ trader }) {
   };
 
   return (
-    <div className="bg-transparent w-[260px] h-[330px] relative   min-h-[100px] border border-[#626060] rounded-[20px] p-6 min-w-[250px] md:min-w-[calc(50%-1rem)]">
+    <div className="bg-transparent w-[260px] h-[280px] relative   min-h-[100px] border border-[#626060] rounded-[20px] p-6 min-w-[250px] md:min-w-[calc(50%-1rem)]">
       <div className="flex items-center gap-3 mb-4 relative top-[-15px] left-[-15px]">
         <div className="w-16 h-16 bg-purple-600 rounded-full"></div>
         <span className="font-semibold text-[12px]" >{trader.id}</span>
@@ -38,14 +38,14 @@ function TraderCard({ trader }) {
           </LineChart>
         </ResponsiveContainer>
       </div> */}
-      <img className="relative top-[-50px] h-[80px]"
+      <img className="relative top-[-50px] h-[40px]"
         src={trader.img}
         />
         <Link to="https://vivstock-user.vercel.app/">
         
       <button 
     
-        className="w-[110%] bg-white h-[45px] text-black top-[-30px] relative left-[-15px] text-[16px] font-[Poppins] font-semibold py-3 rounded-[15px] hover:bg-gray-100 transition-colors"
+        className="w-[110%] bg-white h-[45px] text-black top-[-35px] relative left-[-15px] text-[16px] font-[Poppins] font-semibold py-3 rounded-[15px] hover:bg-gray-100 transition-colors"
       >
         Copy Trade
       </button>
