@@ -29,7 +29,7 @@ function ReferralModal({ isOpen, onClose }) {
     >
       <div 
         ref={modalRef}
-        className="bg-[#1A1A1A] rounded-[30px] w-[70%] relative p-6 transform transition-all duration-300 ease-out mx-4 fixed bottom-[18%] max-sm:w-full"
+        className="bg-[#1A1A1A] rounded-[30px] w-[70%] p-6 transform transition-all duration-300 ease-out mx-4 fixed bottom-[18%] max-sm:w-full"
         style={{
           animation: 'animate-grow 1.7s ease-in'
         }}
@@ -38,7 +38,7 @@ function ReferralModal({ isOpen, onClose }) {
           <div className="mb-8">
             <div className="rounded-lg p-6 mb-8 relative top-[-30px] left-[-25px]">
               <div className="mb-2">
-                <div className="text-[15px] text-white">Referal Balance </div>
+                <div className="text-[15px] text-white">Commission Balance </div>
                 <div className="flex items-center gap-2">
                   <span className="text-white font-bold text-2xl">$</span>
                   <span className="text-3xl relative left-[-8px] font-bold">
@@ -65,7 +65,7 @@ function ReferralModal({ isOpen, onClose }) {
           </button>
         </div>
 
-        <div className="relative top-[-70px] left-[-5px] w-[75%] h-[40px] rounded-full bg-[#000] flex items-center gap-[10px] justify-center group cursor-pointer hover:bg-gray-900 transition-colors max-sm:w-full">
+        <div className="relative top-[-50px] left-[-5px] w-[75%] h-[40px] rounded-full bg-[#000] flex items-center gap-[10px] justify-center group cursor-pointer hover:bg-gray-900 transition-colors max-sm:w-full">
           <span className="text-center text-sm max-sm:text-[13px]">
             https://Vivstock.com/username
           </span>

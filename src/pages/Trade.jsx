@@ -43,7 +43,7 @@ function Trade() {
 
   return (
     <div className="px-4 py-6">
-      <h1 className="text-2xl font-bold mb-6">My Portfolio</h1>
+      <h1 className="text-2xl font-bold mb-6">Trades</h1>
       
       <div className="space-y-4">
         {Object.values(groupedTrades).map((stock) => (
