@@ -25,7 +25,7 @@ function App() {
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/trader/:traderId" element={<TraderProfile />} />
           <Route path='/history' element={<History />} />
-          <Route path='Trade' element={<Trade />} />
+          <Route path='/Trade' element={<Trade />} />
         </Routes>
       </div>
     </div>
