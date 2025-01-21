@@ -7,12 +7,12 @@
 //   ];
 
 //   return (
-//     <div className="flex gap-2 mb-4">
+//     <div className="flex gap-2 mb-4 ">
 //       {timeframes.map(({ label, value }) => (
 //         <button
 //           key={value}
 //           onClick={() => onSelect(value)}
-//           className={`px-4 py-2 rounded-lg text-sm ${
+//           className={`px-4 py-2 rounded-lg text-sm absolute top-[-80px]${
 //             selected === value
 //               ? 'bg-app-gray text-white'
 //               : 'text-gray-400'

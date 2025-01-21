@@ -4,6 +4,7 @@ import AssetBalance from '../components/wallet/AssetBalance';
 // import TimeframeSelector from '../components/wallet/TimeframeSelector';
 import AssetChart from '../components/wallet/AssetChart';
 import { FaLock } from 'react-icons/fa';
+// import TimeframeSelector from '../components/wallet/TimeframeSelector';
 // import LastUpdate from '../components/wallet/LastUpdate';
 
 function Wallet() {
@@ -25,8 +26,9 @@ function Wallet() {
       <WalletHeader />
       <AssetBalance amount={balance.toFixed(2)}  btcAmount={(balance * 1000).toFixed(2)} />
       <AssetChart />
+      {/* <TimeframeSelector /> */}
       {/* <LastUpdate timestamp={new Date().toISOString()} /> */}
-      <div className="flex justify-center gap-4  absolute top-[58%] ">
+      <div className="flex justify-center gap-4  absolute top-[52%] ">
         <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
           Deposit
         </button>
@@ -37,14 +39,15 @@ function Wallet() {
           Transfer
         </button>
       </div>
-      <div className="bg-[#1E1E1E] text-white py-2 px-4 rounded-[20px] h-[80px] font-semibold flex justify-between gap-[30px] mt-8 relative my-[60px] text-center items-center align-middle">
+      <div className="border-b-[1px] border-[#636262] w-screen relative -left-4 top-[-50px]"></div>
+      <div className="bg-[#1E1E1E] text-white py-2 px-4 rounded-[20px] h-[80px] font-semibold flex justify-between gap-[30px] mt-8 -top-[60px] relative my-[60px] text-center items-center align-middle">
         <div className="flex flex-col gap-[6px] items-center">
-          <span className='opacity-[0.3] font-normal '>
-          <FaLock size={20} color='#7d26cd' className="inline-block mr-2" />
+          <span className='opacity-[0.3] font-normal flex items-center'>
+          <FaLock size={20} className="inline-block mr-2 text-[#bc14ff]" />
             Fixed
-          </span> <span>${balance.toFixed(2)}</span>
+          </span> <span className='opacity-[0.7] '>${balance.toFixed(2)}</span>
         </div>
-        <div className="text-center ">6 Months</div>
+        <div className="text-center opacity-[0.3]">6 Months</div>
       </div>
     </div>
   );

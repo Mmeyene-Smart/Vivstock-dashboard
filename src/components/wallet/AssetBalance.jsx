@@ -19,7 +19,7 @@ function AssetBalance({ amount, btcAmount }) {
         )}
       </div>
       <div className="flex items-baseline gap-2">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-2xl font-bold">
           {showBalance ? amount : hiddenValue}
         </h2>
         <span className="text-xl text-gray-400">USD</span>
