@@ -85,4 +85,4 @@ function Trade() {
   );
 }
 
-export default Tr
+export default Trade;
