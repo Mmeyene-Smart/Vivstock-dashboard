@@ -137,10 +137,11 @@ function ActionButtons() {
             Transfer
           </button>
         </div>
+        <div className="border-b-[1px] border-[#636262] w-screen relative -left-4 -top-4"></div>
         {showReferralButton && !isModalOpen && (
           <button
             onClick={openModal}
-            className="bg-[#7F3DFF] text-white py-3 px-4 rounded-full fixed bottom-20 right-4 hover:bg-purple-700 w-[20%] h-[45px] text-2xl flex left-[40%] z-40 items-center justify-center transition-all duration-300 transform hover:scale-105 max-sm:w-[25%] max-sm:left-[38%] max-[620px]:w-[25%]"
+            className="bg-[#7F3DFF] text-white py-3 px-4 rounded-full fixed bottom-20 right-4 hover:bg-purple-700 w-[10%] h-[45px] text-2xl flex left-[50%] z-40 items-center justify-center transition-all duration-300 transform hover:scale-105 max-sm:w-[25%] max-sm:left-[38%] max-[620px]:w-[25%]"
           >
             <span className="text-sm font-medium flex gap-[10px] justify-evenly items-center relative left-[-7px]">
               <img src="/Vivstock_logo__1_-removebg-preview 1 197.png" className='w-[38px] ' />

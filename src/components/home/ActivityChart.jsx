@@ -88,7 +88,7 @@ function ActivityChart() {
 
   return (
     <div className="bg-transparent rounded-lg p-6 mb-8">
-      <div className="w-[1200px] h-[300px] relative left-[-30px] top-[30px]">
+      <div className="w-[1200px] h-[300px] relative left-[-30px] top-[-30px]">
         <div id="tradingview-widget-container" className='w-full h-full'>
           <div className="tradingview-widget-container__widget w-full"></div>
           {/* <div className="tradingview-widget-copyright">

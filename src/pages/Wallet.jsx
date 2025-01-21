@@ -36,6 +36,9 @@ function Wallet() {
           Transfer
         </button>
       </div>
+      <div className="">
+        Fixed Deposit 
+      </div>
     </div>
   );
 }

@@ -31,10 +31,10 @@ const Sidebar = ({ hideOnMobile }) => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className="hidden lg:flex flex-col w-64 min-h-screen bg-[#111111] fixed left-0 top-0">
+      <div className="hidden lg:flex flex-col w-64 min-h-screen bg-[#424242b7] fixed left-0 top-0">
         <div className="p-6">
           <div className="flex items-center gap-2 mb-8">
-            <h1 className="text-2xl font-bold text-white">TradePro</h1>
+            <h1 className="text-2xl font-bold text-white"><img src="/Vivstock_logo__1_-removebg-preview 1 197.png" className='w-[38px] ' /> Vicstock</h1>
           </div>
           <nav className="space-y-2">
             {menuItems.map((item) => (

@@ -62,21 +62,21 @@ function History() {
       <div className="space-y-4">
         {activeTab === 'deposits' && (
           <div className="text-center text-gray-400 py-8">
-            No deposits Made
+            No History.
           </div>
         )}
 
         {activeTab === 'withdrawals' && (
           <div className="text-center text-gray-400 py-8">
-            No withdrawals Made
+            No History.
           </div>
         )}
 
         {activeTab === 'trade' && (
           <div>
             {trades.length === 0 ? (
-              <div className="text-center text-gray-400 py-8">
-                No Available trades 
+              <div className="text-center text-gray-400 py-8 relative top-[200px] ">
+                No History.
               </div>
             ) : (
               <div className="space-y-4">

@@ -43,7 +43,7 @@ function Trade() {
 
   return (
     <div className="px-4 py-6">
-      <h1 className="text-2xl font-bold mb-6">Trades</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center">Trades</h1>
       
       <div className="space-y-4">
         {Object.values(groupedTrades).map((stock) => (
@@ -76,8 +76,8 @@ function Trade() {
         ))}
         
         {Object.values(groupedTrades).every(stock => stock.quantity <= 0) && (
-          <div className="text-center text-gray-400 py-8">
-            No active positions
+          <div className="text-center absolute top-[40%] left-[30%] text-2xl text-gray-400 py-8">
+            <p>No History.</p>
           </div>
         )}
       </div>
