@@ -21,7 +21,7 @@ function History() {
   return (
     <div className="px-4 py-6">
       <div className="flex items-center gap-4 mb-6">
-        <h1 className="text-2xl font-bold">History</h1>
+        <h1 className="text-2xl font-semibold">History</h1>
       </div>
 
       {/* Tabs */}
@@ -61,14 +61,14 @@ function History() {
       {/* Content */}
       <div className="space-y-4">
         {activeTab === 'deposits' && (
-          <div className="text-center text-gray-400 py-8">
-            No History.
+          <div className="text-center text-gray-400 py-8 relative top-[200px]">
+            No History
           </div>
         )}
 
         {activeTab === 'withdrawals' && (
-          <div className="text-center text-gray-400 py-8">
-            No History.
+          <div className="text-center text-gray-400 py-8 relative top-[200px]">
+            No History
           </div>
         )}
 
@@ -76,7 +76,7 @@ function History() {
           <div>
             {trades.length === 0 ? (
               <div className="text-center text-gray-400 py-8 relative top-[200px] ">
-                No History.
+                No History
               </div>
             ) : (
               <div className="space-y-4">
