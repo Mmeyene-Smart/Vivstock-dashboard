@@ -3,6 +3,7 @@ import WalletHeader from '../components/wallet/WalletHeader';
 import AssetBalance from '../components/wallet/AssetBalance';
 // import TimeframeSelector from '../components/wallet/TimeframeSelector';
 import AssetChart from '../components/wallet/AssetChart';
+import { FaLock } from 'react-icons/fa';
 // import LastUpdate from '../components/wallet/LastUpdate';
 
 function Wallet() {
@@ -25,7 +26,7 @@ function Wallet() {
       <AssetBalance amount={balance.toFixed(2)}  btcAmount={(balance * 1000).toFixed(2)} />
       <AssetChart />
       {/* <LastUpdate timestamp={new Date().toISOString()} /> */}
-      <div className="flex justify-center gap-4 mt-8 relative my-[60px]">
+      <div className="flex justify-center gap-4  absolute top-[58%] ">
         <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
           Deposit
         </button>
@@ -36,8 +37,14 @@ function Wallet() {
           Transfer
         </button>
       </div>
-      <div className="">
-        Fixed Deposit 
+      <div className="bg-[#1E1E1E] text-white py-2 px-4 rounded-[20px] h-[80px] font-semibold flex justify-between gap-[30px] mt-8 relative my-[60px] text-center items-center align-middle">
+        <div className="flex flex-col gap-[6px] items-center">
+          <span className='opacity-[0.3] font-normal '>
+          <FaLock size={20} color='#7d26cd' className="inline-block mr-2" />
+            Fixed
+          </span> <span>${balance.toFixed(2)}</span>
+        </div>
+        <div className="text-center ">6 Months</div>
       </div>
     </div>
   );
