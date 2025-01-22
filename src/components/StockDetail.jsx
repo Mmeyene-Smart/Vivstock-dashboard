@@ -4,6 +4,7 @@ import { IoArrowBack } from "react-icons/io5";
 import { IoMdHeart } from "react-icons/io";
 import { stockData } from "../data/stockData";
 import StockMetrics from "./stock/StockMetrics";
+
 import {
   LineChart,
   Line,
@@ -53,7 +54,7 @@ function StockDetail() {
   };
 
   return (
-    <div className="min-h-screen max-w-5xl mx-auto font-['DM Sans'] px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen max-w-2xl h-[200px] mx-auto font-['DM Sans'] px-4 sm:px-6 lg:px-8">
       <div className="py-4 sm:py-6">
         <div className="flex items-center justify-between mb-2">
           <button
@@ -270,7 +271,7 @@ function StockDetail() {
             </div>
 
             {/* Trading Buttons */}
-            <div className="w-full">
+            <div className="w-full relative top-[-100px]">
               <div className="flex gap-4">
                 <button
                   onClick={() => handleTrade("buy")}

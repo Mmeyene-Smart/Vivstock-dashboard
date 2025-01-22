@@ -1,6 +1,7 @@
 import { BsCurrencyDollar, BsHash } from 'react-icons/bs';
 import { TbArrowsExchange2 } from 'react-icons/tb';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import ExpireTime from './ExpireTime';
 
 function StockMetrics({ price }) {
   return (
@@ -25,6 +26,8 @@ function StockMetrics({ price }) {
             <span className="font-semibold text-sm text-white">0</span>
           </div>
         </div>
+            <ExpireTime />
+
       </div>
     </div>
   );
