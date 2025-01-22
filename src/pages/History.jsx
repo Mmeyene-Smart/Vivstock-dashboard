@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { IoArrowBack } from 'react-icons/io5';
 
 function History() {
-  const [activeTab, setActiveTab] = useState('trade');
+  const [activeTab, setActiveTab] = useState('deposits');
   const [trades, setTrades] = useState([]);
 
   useEffect(() => {
@@ -61,13 +61,13 @@ function History() {
       {/* Content */}
       <div className="space-y-4">
         {activeTab === 'deposits' && (
-          <div className="text-center text-gray-400 py-8 relative top-[200px]">
+          <div className="text-center text-gray-400 py-8 relative top-[190px]">
             No History
           </div>
         )}
 
         {activeTab === 'withdrawals' && (
-          <div className="text-center text-gray-400 py-8 relative top-[200px]">
+          <div className="text-center text-gray-400 py-8 relative top-[190px]">
             No History
           </div>
         )}
@@ -75,7 +75,7 @@ function History() {
         {activeTab === 'trade' && (
           <div>
             {trades.length === 0 ? (
-              <div className="text-center text-gray-400 py-8 relative top-[200px] ">
+              <div className="text-center text-gray-400 py-8 relative top-[190px] ">
                 No History
               </div>
             ) : (

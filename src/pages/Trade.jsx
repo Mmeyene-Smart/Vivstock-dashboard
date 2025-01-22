@@ -76,7 +76,7 @@ function Trade() {
         ))}
         
         {Object.values(groupedTrades).every(stock => stock.quantity <= 0) && (
-          <div className="text-center absolute top-[40%] left-[30%] text-2xl text-gray-400 py-8">
+          <div className="text-center absolute top-[35%] left-[40%] text-gray-400 py-8">
             <p>No History</p>
           </div>
         )}
