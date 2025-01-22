@@ -132,7 +132,7 @@ function StockDetail() {
 
             <h2 className="text-xl font-bold mb-4 relative left-3">About {stock.name}</h2>
 
-            <p className="text-gray-300 leading-relaxed text-sm sm:text-base px-4 sm:px-0 mb-8">
+            <p className="text-gray-300 leading-relaxed text-sm sm:text-base px-4 sm:px-0 mb-8 relative left-[-5px]">
               {stock.name} operates as a company in the Nigerian market. The
               company provides various services and products to its customers,
               maintaining a strong presence in the local business environment.
@@ -312,7 +312,7 @@ function StockDetail() {
             </div>
             <h2 className="text-xl font-bold mb-4 relative left-3">About {stock.name}</h2>
 
-            <div className="grid grid-cols-1 gap-4 mb-8">
+            <div className="grid grid-cols-1 gap-4 mb-8 relative left-[-5px]">
               <div className="bg-transparent p-4 rounded-lg">
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {stock.name} operates as a company in the Nigerian market. The

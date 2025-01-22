@@ -1,12 +1,40 @@
-import { FaLock } from 'react-icons/fa';
+import { FaLock, FaArrowLeft } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+// import AssetBalance from '../components/wallet/AssetBalance';
+import  { useState } from 'react';
+// import { IoEyeOffOutline, IoEyeOutline } from 'react-icons/io5';
 
 const Fixed = () => {
+  const navigate = useNavigate();
+  const [showBalance, setShowBalance] = useState(true);
+
   return (
     <div className='bg-transparent text-white p-4'>
-      <h1 className="bg-purple-600 p-2 h-[70px] flex justify-center items-center gap-2 rounded-3xl">
-        How Vivstock Fixed Deposits Work
-        <FaLock className="text-white ml-2" />
-      </h1>
+      <div className='flex items-center justify-evenly top-[-15px] text-center gap-[30px] relative  left-[-20px] bg-black w-[500px]'>
+          <button onClick={() => navigate(-1)} className="flex items-center pb-2 relative left-[-20%]">
+            <FaArrowLeft className="mr-2 " /> Back
+          </button>
+          <p className='text-[20px] pb-2 relative left-[-30%]'>Fixed</p>
+      </div>
+      <div className="bg-purple-600 p-2 h-[70px] flex justify-center items-center gap-2 rounded-3xl">
+        {/* <AssetBalance amount={balance.toFixed(2)}  btcAmount={(balance * 1600).toFixed(2)}/> */}
+        <div className="flex items-center gap-2 relative left-5">
+            
+
+                  <span className="text-white font-bold text-2xl">$</span>
+                  <span className="text-3xl relative left-[-8px] font-bold">
+                    {showBalance ? '0.00' : ''}
+                  </span> 
+                  {/* <button 
+                  onClick={() => setShowBalance(!showBalance)}
+                  className="text-gray-400 hover:text-white relative left-[-10px] transition-colors"
+                >
+                  {showBalance ? <IoEyeOutline size={20} /> : <IoEyeOffOutline size={20} />}
+                </button> */}
+        </div>
+
+        <img src="/Padlock-PNG-Transparent-Image.png" width={50} className='relative left-[90px]' height={50} alt="" />
+      </div>
       <p className="mt-4">
         With Vivstock, you have the opportunity to invest your funds in a fixed deposit plan, offering a secure way to grow your investment. You can choose between two deposit terms: 6 months or 1 year, depending on your financial goals.
         <br /><br />
