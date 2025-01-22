@@ -31,7 +31,7 @@ const Sidebar = ({ hideOnMobile }) => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className="hidden lg:flex flex-col w-64 min-h-screen bg-[#424242b7] fixed left-0 top-0">
+      <div className="hidden lg:flex flex-col w-64  h-[10px] bg-[#424242b7] fixed left-0 top-0">
         <div className="p-6">
           <div className="flex items-center gap-2 mb-8">
             <h1 className="text-2xl font-bold text-white"><img src="/Vivstock_logo__1_-removebg-preview 1 197.png" className='w-[38px] ' /> Vicstock</h1>
@@ -61,7 +61,7 @@ const Sidebar = ({ hideOnMobile }) => {
       {/* Mobile Bottom Navigation */}
       {!hideOnMobile && (
         <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-[#111111] border-t border-[#1E1E1E] z-50">
-          <nav className="flex justify-around py-3 px-2">
+          <nav className="flex justify-around py-2 px-2">
             {menuItems.map((item) => (
               <NavLink
                 key={item.path}

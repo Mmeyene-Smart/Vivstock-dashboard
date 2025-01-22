@@ -65,16 +65,14 @@ function Market() {
         </button>
       </div>
 
-      <div className="bg-black p-4 rounded-lg mb-8">
-        <div className="flex items-center gap-3">
+      <div className="bg-black p-4 rounded-lg mb-8 " >
+        <div className="flex items-center gap-3" onClick={()=>navigate('/refer')}>
           <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-            </svg>
+            <img src="/refer-friend-concept-illustration-b.png" alt="" />
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white">Low-risk assets mix</h3>
-            <p className="text-gray-600">268.47% USD* • 8 years</p>
+            <h3 className="text-lg font-semibold text-white">Refer A Friend To Vivstock</h3>
+            <p className="text-gray-600">Get 5% Interest On Thier First Deposit</p>
           </div>
         </div>
       </div>
@@ -88,10 +86,10 @@ function Market() {
             onClick={() => handleAssetClick('usd')}
           >
             <div className="w-24 h-12 mb-4">
-              <div className="w-full h-full bg-green-100 rounded-lg"></div>
+              <div className="w-full h-fullrounded-lg relative top-[-20px]"><img src="/vivstock_20250121_065809_0003.png" alt="" /></div>
             </div>
-            <h3 className="text-[17px] font-bold text-white w-full">Foreign Stocks</h3>
-            <p className="text-white text-[12px] sm:text-[12px] w-full">Buy Foreign Companies</p>
+            <h3 className="text-[17px] font-bold relative top-5 text-white w-full">Foreign Stocks</h3>
+            <p className="text-white text-[12px] sm:text-[12px] relative top-5 w-full">Buy Foreign Companies</p>
           </div>
         )}
 
@@ -101,10 +99,10 @@ function Market() {
             onClick={() => handleAssetClick('ngn')}
           >
             <div className="w-24 h-16 mb-4">
-              <div className="w-full h-full bg-green-100 rounded-lg"></div>
+              <div className="w-full h-full relative top-[-20px] rounded-lg"><img src="/vivstock_20250121_065810_0005.png" alt="" /></div>
             </div>
-            <h3 className="text-lg font-bold text-white w-full">Local Stocks</h3>
-            <p className="text-white text-[12px] sm:text-[12px] w-full">Buy local companies</p>
+            <h3 className="text-lg font-bold   w-full">Local Stocks</h3>
+            <p className="text-white text-[12px] mb-5 sm:text-[12px] w-full">Buy local companies</p>
           </div>
         )}
       </div>

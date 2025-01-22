@@ -31,11 +31,13 @@ function Wallet() {
       <AssetChart />
       {/* <TimeframeSelector /> */}
       {/* <LastUpdate timestamp={new Date().toISOString()} /> */}
-      <div className="flex justify-center gap-[90px] left-[10px] absolute top-[472px]  ">
-        <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-[10px] font-medium relative left-[45px]">
+      <div className="flex justify-center gap-[90px] left-[10px] absolute top-[472px]  items-center ">
+        <button className="bg-[#1E1E1E] w-[120px] text-white py-2 px-4 rounded-[10px] font-medium flex relative left-[45px] gap-[6px]">
+        <svg className='relative top-[5px]' xmlns="http://www.w3.org/2000/svg" fill="#7626cd" width="15px" height="15px" viewBox="0 0 24.00 24.00" transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)" stroke="#7626cd" stroke-width="0.12000000000000002"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M19.6 21H4.4C3.1 21 2 19.9 2 18.6V14h2v4.2c0 .6.4.8 1 .8h14c.6 0 1-.4 1-1v-4h2v4.6c0 1.3-1.1 2.4-2.4 2.4z"></path><path d="M15.3 12.1L13.4 14v-4c0-2 0-4.9 2.4-7-3.4.6-5.1 3.2-5.2 7v4l-1.9-1.9L7 13l5 5 5-5-1.7-.9z"></path></g></svg>
           Deposit
         </button>
-        <button className="bg-[#1E1E1E] w-[110px] relative left-[10px] text-white py-2 px-4 rounded-[10px] font-medium">
+        <button className="bg-[#1E1E1E] w-[125px] relative left-[10px] text-white py-2 px-4 rounded-[10px] flex font-medium gap-[4px] items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#7d26cd" width="15px" height="15px" viewBox="0 0 24 24" transform="matrix(-1, 0, 0, -1, 0, 0)" stroke="#7d26cd" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"><path d="M19.6 21H4.4C3.1 21 2 19.9 2 18.6V14h2v4.2c0 .6.4.8 1 .8h14c.6 0 1-.4 1-1v-4h2v4.6c0 1.3-1.1 2.4-2.4 2.4z"></path><path d="M15.3 12.1L13.4 14v-4c0-2 0-4.9 2.4-7-3.4.6-5.1 3.2-5.2 7v4l-1.9-1.9L7 13l5 5 5-5-1.7-.9z"></path></g></svg>
           Withdraw
         </button>
         {/* <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
