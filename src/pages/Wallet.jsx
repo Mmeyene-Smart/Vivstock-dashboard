@@ -3,7 +3,7 @@ import WalletHeader from '../components/wallet/WalletHeader';
 import AssetBalance from '../components/wallet/AssetBalance';
 // import TimeframeSelector from '../components/wallet/TimeframeSelector';
 import AssetChart from '../components/wallet/AssetChart';
-import { FaLock } from 'react-icons/fa';
+import { FaArrowRight, FaLock } from 'react-icons/fa';
 // import TimeframeSelector from '../components/wallet/TimeframeSelector';
 // import LastUpdate from '../components/wallet/LastUpdate';
 
@@ -47,7 +47,7 @@ function Wallet() {
             Fixed
           </span> <span className='opacity-[0.7] '>${balance.toFixed(2)}</span>
         </div>
-        <div className="text-center opacity-[0.3]">6 Months</div>
+        <div className="text-center opacity-[0.3]"><FaArrowRight size={20}/></div>
       </div>
     </div>
   );

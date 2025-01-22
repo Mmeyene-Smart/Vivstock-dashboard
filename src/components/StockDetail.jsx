@@ -112,7 +112,7 @@ function StockDetail() {
               <img
                 src={stock.logo || "https://example.com/placeholder.png"}
                 alt={stock.name}
-                className="w-16 h-16 rounded-lg bg-white"
+                className="w-[38px] h-[38px] rounded-lg bg-white  relative top-[-10px]"
               />
               <div className="text-left">
                 <h2 className="text-2xl font-bold mb-1">₦{stock.price}</h2>
