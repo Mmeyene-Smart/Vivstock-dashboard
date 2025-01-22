@@ -28,16 +28,16 @@ function Wallet() {
       <AssetChart />
       {/* <TimeframeSelector /> */}
       {/* <LastUpdate timestamp={new Date().toISOString()} /> */}
-      <div className="flex justify-center gap-4  absolute top-[52%] ">
+      <div className="flex justify-center gap-4  absolute top-[472px] left-1 ">
         <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
           Deposit
         </button>
         <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
           Withdraw
         </button>
-        <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
+        {/* <button className="bg-[#1E1E1E] w-[110px] text-white py-2 px-4 rounded-full font-medium">
           Transfer
-        </button>
+        </button> */}
       </div>
       <div className="border-b-[1px] border-[#636262] w-screen relative -left-4 top-[-50px]"></div>
       <div className="bg-[#1E1E1E] text-white py-2 px-4 rounded-[20px] h-[80px] font-semibold flex justify-between gap-[30px] mt-8 -top-[60px] relative my-[60px] text-center items-center align-middle">
