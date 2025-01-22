@@ -8,6 +8,7 @@ import Wallet from './pages/Wallet';
 import TraderProfile from './pages/TraderProfile';
 import History from './pages/History';
 import Trade from './pages/Trade';
+import Fixed from './pages/Fixed';
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/trader/:traderId" element={<TraderProfile />} />
           <Route path='/history' element={<History />} />
           <Route path='/Trade' element={<Trade />} />
+          <Route path="/fixed" element={<Fixed />} />
         </Routes>
       </div>
     </div>
